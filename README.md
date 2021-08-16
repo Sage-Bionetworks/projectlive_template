@@ -40,6 +40,6 @@ shiny::tabPanel(
         "Snapshot",
         projectlive.modules::summary_snapshot_module_ui("summary_snapshot_ui_1"),
         icon = shiny::icon("chart-area")
-      ),
+),
 ```
 
