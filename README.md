@@ -23,7 +23,7 @@ You will need to chnage the synapse config file: "inst/synapse_module.json" to u
 
 # Using projectlive modules
 In "R/app_server.R" the various modules are called like:
-'''
+```
   projectlive.modules::summary_snapshot_module_server(
     id = "summary_snapshot_ui_1",
     data = data,
@@ -31,4 +31,15 @@ In "R/app_server.R" the various modules are called like:
       jsonlite::read_json("inst/summary_snapshot_module.json")
     )
   )
- '''
+```
+
+The app is currentl using all the available modules, but you may not to use them all. Comment out or delete the modules you aren't using. Then do the same in "R/app_ui.R". :
+
+```
+shiny::tabPanel(
+        "Snapshot",
+        projectlive.modules::summary_snapshot_module_ui("summary_snapshot_ui_1"),
+        icon = shiny::icon("chart-area")
+      ),
+```
+
