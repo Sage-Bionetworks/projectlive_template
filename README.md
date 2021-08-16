@@ -9,7 +9,7 @@ The app assumes the data to power the visualizations are in synapse, and that th
 
 For local use you can use an already created oauth client. The information is in last pass, in a folder named "Shared-Sage" in a file named "Synapse Shiny local oauth client config".
 
-For use on shiny server you will need to create your own client, instructiosn are here: https://help.synapse.org/docs/Using-Synapse-as-an-OAuth-Server.2048327904.html . Once you've created your own client you will have the client secret id and app url to put into the config.
+For use on shiny server you will need to create your own client, instructions are here: https://help.synapse.org/docs/Using-Synapse-as-an-OAuth-Server.2048327904.html . Once you've created your own client you will have the client secret id and app url to put into the config.
 
 Note, the app uses reticulate and the python client for Synapse, and not the R client.
 
