@@ -2,7 +2,7 @@
 This repo is a template for creating projectLive apps. 
 
 # Getting started
-The first thing you will want to do it start a repo for your app, using this one as a template. Once you've doen that you can start modifying the template code for your app. The template is based on the CSBC version of the app.
+The first thing you will want to do it start a repo for your app, using this one as a template. Once you've done that you can start modifying the template code for your app. The template is based on the CSBC version of the app.
 
 # Oauth/synapse login
 The app assumes the data to power the visualizations are in synapse, and that the user will be already logged into synapse and has permissions to see the data. The app will create an access token via OAuth and use this to login to synapse and get the needed data. To do this you will need to fill out the file "inst/oauth_config_template.yaml" and rename it "inst/oauth_config.yaml".
