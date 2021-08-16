@@ -16,7 +16,7 @@ Note, the app uses reticulate and the python client for Synapse, and not the R c
 # Creating the data files
 ProjectLive was started using file views that were used to power the NF Synapse portal. Synapse table queries were too slow to use in a shiny app so it was decided to do those beforehand and save the results in RDS files in Synapse. These RDS files are what the current app uses. You will need one for each original fileview. The code that creates these for the current app are in the Data-Raw folder. 
 
-If your app doesn't have the fileviews for a synapse portals table, or you want to pull form them directly in the app, that is possble, but take some work to accomodate.
+If your app doesn't have the fileviews for a synapse portals table, or you want to pull form them directly in the app, that is possble, but would take some work to modify the app to do so.
 
 # Config files
 You will need to chnage the synapse config file: "inst/synapse_module.json" to use the synapse ids for your RDS files. In addition you'll need to change the rest of the "module.json" files in the inst dir for modules you intend to use. The fileview tables will likely have different column names, and you may want to visualize things differently than the current app.
